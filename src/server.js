@@ -5,7 +5,7 @@ const webRoutes = require('./route/web')
 const bodyParser = require("body-parser");
 
 const app = express();
-// const port = process.env.PORT || 8888; // if PORT not in .env file get 8888
+const port = process.env.PORT || 8888; // if PORT not in .env file get 8888
 // const hostname = process.env.HOST_NAME;
 
 // Middleware để parse JSON
@@ -25,5 +25,9 @@ app.use('/', webRoutes)
 //     console.log(`Example app listening on http://${hostname}:${port}`);
 // });
 
-// test connection
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+});
+
+
 
