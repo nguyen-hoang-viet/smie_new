@@ -2,7 +2,7 @@
   "name": "web-practise",
   "version": "1.0.0",
   "description": "built a website with nodejs",
-  "main": "node server.js",
+  "main": "server.js",
   "engines": {
     "node": "22.x"
   },
