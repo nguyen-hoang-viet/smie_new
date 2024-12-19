@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập phí ship và mã giảm giá</title>
+    <link rel="stylesheet" href="/css/shipFeeAndDiscount.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nhập phí ship và mã giảm giá</h1>
+
+    <form id="ship-discount-note-form">
+        <div class="input-group">
+            <label for="ship-fee">Phí ship:</label>
+            <input type="text" id="ship-fee" name="ship-fee">
+        </div>
+
+        <div class="input-group">
+            <label for="discount-code">Mã giảm giá:</label>
+            <input type="text" id="discount-code" name="discount-code">
+        </div>
+
+        <div class="input-group">
+            <label for="Note">Note:</label>
+            <input type="text" id="note" name="note">
+        </div>
+        <input type="printBill" value="Thanh toán" id="btn-thanh-toan">
+    </form>
+    </div>
+
+    <script src="/js/shipFeeAndDiscount.js"></script>
+</body>
+</html>

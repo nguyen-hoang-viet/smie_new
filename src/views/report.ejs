@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= "/css/styleReport.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="/">Trang chủ</a>
+        <a class="active" href="/report">Thống kê</a>
+    </div>
+
+    <div class="table-container">
+        <button id="exportExcel" class="btn_export">Xuất Excel</button>
+        <div class="title">Bảng thống kê</div>
+        <table>
+            <tr class="first_row">
+                <th>Bàn</th>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Mã hàng</th>
+                <th>Tên hàng</th>
+                <th>Số lượng</th>
+                <th>Tổng cộng</th>
+                <th>Thu thêm</th>
+                <th>Giảm giá</th>
+                <th></th>
+            </tr>
+            
+
+            <% listData.forEach(function(data) { %>
+                <tr>
+                    <td>
+                        <%= data.table_id%>
+                    </td>
+                    <td>
+                        <%= data.date%>
+                    </td>
+                    <td>
+                        <%= data.hour%>
+                    </td>
+                    <td>
+                        <%= data.product_code%>
+                    </td>
+                    <td>
+                        <%= data.product_name%>
+                    </td>
+                    <td>
+                        <%= data.quantity%>
+                    </td>
+                    <td>
+                        <%= data.total.toLocaleString('vi-VN')%>
+                    </td>
+                    <td>
+                        <%= data.ship_fee.toLocaleString('vi-VN')%>
+                    </td>
+                    <td>
+                        <%= data.discount.toLocaleString('vi-VN')%>
+                    </td>
+                    <td>
+                        <button class="btn_del">Delete</button>
+                    </td>
+                </tr>
+            <% }) %>
+        </table>
+    </div>
+
+    <script type="module" src="/js/report.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="/js/export.js"></script>
+</body>
+</html>

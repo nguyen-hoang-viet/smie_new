@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile</title>
+    <link rel="stylesheet" href= "/css/stylesHome.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="topnav">
+            <a class="active" href="/">Trang chủ</a>
+            <a href="/report">Thống kê</a>
+        </div>
+        
+        <div id="container-main">
+            <div id="tables">
+                <!-- Generate 16 tables use JS -->
+            </div>
+            <div id="order">
+                <h4 id="title_order">Nhập món cho bàn <span id="tableNumber"></span></h4>
+                <!-- Your order form goes here -->
+                <form id="orderForm">
+                    <div class="order-items">
+                        <input type="text" id="dish" name="dish"><br>
+                    </div>
+                    <input type="printBill" value="Thanh toán" id="btn-thanh-toan"><br>
+                    <input type="view" value="Xem" id="btn-view">
+                </form>
+                <div id="autocorrect"></div>       
+                <div id="order-items"></div><br> 
+            </div>        
+        </div>
+    </div>
+
+    <script type="module" src="/js/home_main.js"></script>
+</body>
+</html>
