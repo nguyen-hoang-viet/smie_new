@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hóa đơn</title>
+	<link rel="stylesheet" href="/css/bill.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class= "title">SMILE - Tiệm Ăn Vặt</div>
+		<div class = 'title2'>
+		Địa chỉ: 6/6 Tôn Thất Tùng<br>
+		Điện thoại: 0932575958
+		</div>
+        <div class = "hoadon" style="text-align: center;">HÓA ĐƠN THANH TOÁN</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th id = "dishName">Tên món</th>
+					<th>SL</th>
+					<th id = "dishPrice">Đ.giá</th>
+					<th id = "totalDishPrice">T.tiền</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<td id = "titleTotal" colspan="3">Thành tiền</td>
+					<td id = "total"></td>
+				</tr>
+				<tr>
+					<td id = "titleDiscount" colspan="3">Giảm giá</td>
+					<td id="discount"></td>
+				</tr>
+                <tr>
+					<td id = "titleShipCod" colspan="3">Phí ship</td>
+					<td id="shipCod"></td>
+				</tr>
+				<tr>
+					<td id = "titleTotalCost" colspan="3">Tổng cộng</td>
+					<td id = "totalCost"></td>
+				</tr>
+			</tfoot>
+		</table>
+		<div class = "thank" style="text-align: center;">Trân trọng cảm ơn!</div>
+        <button id="btn-print">In ấn</button>
+	</div>
+	<script src="/js/bill.js"></script>
+</body>
+
+</html>

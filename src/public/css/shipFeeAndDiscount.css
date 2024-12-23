@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 95%;
+    height: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/*Button 'Thanh toan'*/
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/*button 'Thanh toan'*/
+input[type="printBill"]{
+    width: 90px; /* Set button width */
+    height: 30px; /* Set button height */
+    font-size: 16px; /* Set button font size */
+    background-color: #a3f3b1; /* Default button color */
+    color: rgb(0, 0, 0); /* Default text color */
+    transition: background-color 0.1s ease; /* Add transition effect */
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
