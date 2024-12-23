@@ -8,12 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
     "start": "node ./server.js",
     "app": "nodemon ./server.js"
-=======
-    "start": "node ./server.js"
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
   },
   "keywords": [
     "nodejs"
@@ -21,19 +17,13 @@
   "author": "HViet55",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "bull": "^4.16.5",
-=======
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
     "dotenv": "16.4.5",
     "ejs": "3.1.10",
     "express": "^4.21.0",
     "file-saver": "^2.0.5",
     "mysql2": "^3.11.3",
-<<<<<<< HEAD
     "redis": "^4.7.0",
-=======
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
     "xlsx": "^0.18.5"
   },
   "devDependencies": {

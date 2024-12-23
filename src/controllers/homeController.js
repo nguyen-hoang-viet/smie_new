@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 const { getAllData, addOrdersToDB, deleteOrdersFromDB, 
     getOrdersFromDB, addToReport, deleteReportDB, checkDataInRedis,
-    getDataInRedis } = require("../service/CRUDservice");
-=======
-const connection = require('../config/database')
-const { getAllData, addOrdersToDB, deleteOrdersFromDB, getOrdersFromDB, addToReport } = require("../service/CRUDservice");
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
-
+    getDataInRedis } = require("../service/CRUDservice")
 const getHomePage = async (req, res) => {
     res.render("home.ejs");
 };
@@ -21,11 +15,8 @@ const getView = async (req, res) => {
     res.render("view.ejs");
 };
 
-<<<<<<< HEAD
+
 const getShipFeeAndDiscount = async (req, res) => {
-=======
-const getshipFeeAndDiscount = async (req, res) => {
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
     res.render("shipFeeAndDiscount.ejs");
 };
 
@@ -52,11 +43,6 @@ const deleteOrders = async (req, res) => {
 const getOrders = async (req, res) => {
     let results = await getOrdersFromDB();
     res.json(results);
-<<<<<<< HEAD
-=======
-    //console.log("Show data", results);
-    //res.redirect("/");
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
 }
 
 const addReport = async (req, res) => {
@@ -66,7 +52,6 @@ const addReport = async (req, res) => {
     res.redirect("/bill");
 }
 
-<<<<<<< HEAD
 const deleteReport = async (req, res) => {
     await deleteReportDB();
     //res.send("Create done")
@@ -87,27 +72,18 @@ const getDataFromRedis = async (req, res) => {
     res.json(data)
 }
 
-=======
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
+
 module.exports = {
     getHomePage,
     getReport,
     getView,
-<<<<<<< HEAD
     getShipFeeAndDiscount,
-=======
-    getshipFeeAndDiscount,
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
     getBill,
     postOrdersToDB,
     deleteOrders,
     getOrders,
-<<<<<<< HEAD
     addReport,
     deleteReport,
     checkRedis,
     getDataFromRedis
-=======
-    addReport
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
 };

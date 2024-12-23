@@ -63,20 +63,16 @@ tr:hover {
     text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 .btn_del {
     padding: 5px 10px;
     cursor: pointer;
 }
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
 .btn_export{
     font-size: 20px;
     padding: 5px;
     background-color: #FFC300;
     cursor: pointer;
 }
-<<<<<<< HEAD
 
 .btn_delete_Report{
     font-size: 20px;
@@ -86,5 +82,3 @@ tr:hover {
     padding: 5px 10px;
 }
 
-=======
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5

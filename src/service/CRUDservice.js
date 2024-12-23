@@ -1,10 +1,8 @@
 const connection = require('../config/database')
-<<<<<<< HEAD
 const redisConnection = require("../config/redis");
 
 //-------------------------------MySQL-------------------------------
-=======
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
+
 
 const getAllData = async () => {
     let [results, fields] = await connection.query('select * from report')
@@ -48,7 +46,6 @@ const addToReport = async (tableNumber, date, time, code, nameDish, quantity, to
     );
 }
 
-<<<<<<< HEAD
 const deleteReportDB = async () => {
     let [results, fields] = await connection.query(
         `
@@ -86,19 +83,14 @@ const getDataInRedis = async () => {
     //console.log(size);
 }
 
-=======
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
 module.exports = {
     getAllData,
     addOrdersToDB,
     deleteOrdersFromDB,
     getOrdersFromDB,
-<<<<<<< HEAD
     addToReport,
     deleteReportDB,
     checkDataInRedis,
     getDataInRedis
-=======
-    addToReport
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
+
 }

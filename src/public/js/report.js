@@ -19,8 +19,6 @@ document.getElementById("exportExcel").addEventListener("click", function () {
     // Xuất file Excel
     XLSX.writeFile(wb, "BaoCaoThongKe.xlsx");
 });
-<<<<<<< HEAD
-
 
 document.getElementById("deleteReport").addEventListener("click", async () => {
     try {
@@ -35,6 +33,3 @@ document.getElementById("deleteReport").addEventListener("click", async () => {
             alert("An error occurred while deleting the report.");
         }
 });
-
-=======
->>>>>>> 5d5b9451b2d0777f4527ed88501faeb7e2d8efb5
